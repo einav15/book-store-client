@@ -1,0 +1,20 @@
+.menu-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 2rem; 
+    background: $blueish-gray;
+    @media(max-width: $mobile-view){
+        display: none;
+    }
+    .menu-bar__option{
+        text-decoration: none;
+        color: rgb(74, 93, 94);
+        margin-right: 1rem;
+        font-size: 0.9rem;
+        img{
+            margin-right: 4px;
+            height: 1rem;
+        }
+    }
+}

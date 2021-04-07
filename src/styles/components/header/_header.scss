@@ -1,0 +1,109 @@
+.header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 1px 2px 4px gray;
+    @media (max-width: $mobile-view){
+        padding: 2rem;
+        width: 100%;
+        position: fixed;
+        z-index: 98;
+    }
+    #logo-link{
+        width: 146px;
+        height: 2rem;
+    }
+    #logo{
+        position: absolute;
+        left: 0.45rem;
+        height: 2rem;
+        @media (max-width: $mobile-view){
+            left: auto;
+        }
+    }
+    .mobile-nav{
+        position: absolute;
+        left: 2rem;
+        z-index: 100;
+        @media (min-width: $mobile-view){
+            display: none;
+        }
+    }
+    button{
+        background: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    form{
+        margin-left: 3.5rem;
+        display: flex;
+        align-items: flex-end;
+        .search-bar{
+            border-radius: 2rem;
+            border: 1px solid lightgray;
+            padding: 0.5rem;
+            &:focus{
+                outline: none;
+            }
+        }
+        input{
+            border: none;
+            background: none;
+            width: 60vw;
+            padding: 0.5rem;
+        }
+        button{
+            background: none;
+            padding: 0 0 0.5rem 0;
+            width: 16px;
+        }
+        @media (max-width: $mobile-view) {
+            display: none;
+        }
+    }
+}
+
+.nav-icon{  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2rem;
+    cursor: pointer;
+    .nav-icon__line{
+        height: 5px;
+        width: 3rem;
+        background: rgb(87, 87, 87);
+        border-radius: 1rem;
+    }
+}
+.dropdown-menu__darken{
+    width: 100vw;
+    height: 200vh;
+    position: fixed;
+    background: #00000050 ;
+    @media (min-width: $mobile-view) {
+        display: none;
+    }
+}
+.dropdown-menu{
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    padding-top: 3rem;
+    width: 18rem;
+    height: calc(100vh - 3rem);
+    background: white;
+    box-shadow: 1px 1px 3px black;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    @media (min-width: $mobile-view) {
+        display: none;
+    }
+    .side-menu{
+        width: 10rem;
+    }
+}

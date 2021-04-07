@@ -1,0 +1,26 @@
+@import './base/base';
+@import './base/settings';
+@import './base/animations';
+@import './components/home/banner';
+@import './components/home/home-page';
+@import './components/home/books-carousel';
+@import './components/header/header';
+@import './components/header/menu-bar';
+@import './components/footer';
+@import './components/book-item';
+@import './components/advanced-search';
+@import './components/side-menu';
+@import './components/book-page';
+@import './components/contact';
+@import './components/login/login-form';
+@import './components/login/admin';
+@import './components/login/user-page.scss';
+@import './components/login/sign-up-form';
+@import './components/cart/cart-item';
+@import './components/cart/cart';
+
+
+
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+ 

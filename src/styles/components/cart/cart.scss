@@ -1,0 +1,44 @@
+.cart-title{
+    margin-left: 1rem;
+    padding-top: 2rem;
+    color: gray;
+}
+
+.total-price{
+    display: flex;
+    padding: 2rem 0;
+    justify-content: right;
+    .total-price__container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 3px black;
+        background: white;
+        color: $dark-grey;
+        width: 10rem;
+        text-align: center;
+    }
+    #purchase-btn{
+        font-size: 0.8rem;
+        font-weight: 700;
+        background: $dark-grey;
+        color: white;
+        padding: 1rem;
+        margin-top: 1rem;
+        width: fit-content;
+        &:hover{
+            cursor: pointer;
+            color: $dark-grey;
+            background: white;
+        }
+    }
+}
+
+.cart{
+    @media (max-width: 950px) and (min-width: $mobile-view){
+        margin-left: 11rem !important
+    }
+}

@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppRouter from './routers/AppRouter'
 
+export const url = 'https://arcane-hamlet-07739.herokuapp.com/'
+ 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppRouter /> 
   </React.StrictMode>,
   document.getElementById('root')
 );

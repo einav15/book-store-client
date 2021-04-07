@@ -1,0 +1,180 @@
+.admin-page{
+    padding: 4rem 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    color: $dark-grey;
+    @media (max-width: $mobile-view){
+        flex-direction: column;
+        align-items: center;
+    }
+    .admin-page__box{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 1px 1px 3px black;
+        border-radius: 1rem;
+        background: white;
+        height: fit-content;
+        @media (max-width: $mobile-view){
+            margin: 2rem 0;
+            width: 70%;
+        }
+        input{
+            margin: 1rem 0;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            select, textarea{
+                margin: 1rem 0;
+            }
+        }
+        h5{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+        margin: 0.3rem 0;
+    }
+}
+
+
+
+.edit-book__background{
+    margin-top: -8rem;
+    z-index: 100;
+    position: fixed;
+    height: 110vh;
+    width: 100vw;
+    background: #000000BA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $mobile-view){
+        margin-top: 0;
+    }
+}
+.edit-book{
+    margin-top: 1rem;
+    position: absolute;
+    left: calc((100vw - 70vw)/2);
+    z-index: 104; 
+    // height: 50rem;
+    width: 70vw;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $mobile-view){
+        margin-top: 2rem;
+        width: 80vw;
+        left: calc((100vw - 90vw)/2);
+        padding: 0.4rem;
+        margin-right: 1rem;
+    }
+    h2{
+        margin: 2rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    form{
+        margin-left: 2rem;
+        @media (max-width: $mobile-view){
+            margin-left: 0;
+        }
+        .edit-book__property-radio{
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        p{
+            position: absolute;
+            left: 2rem;
+            @media (max-width: $mobile-view){
+                position: static;
+            }
+        }
+        .edit-book__property{
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            @media (max-width: $mobile-view){
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                input{
+                    width: 40vw !important;
+                }
+                select, textarea{
+                    width: calc(40vw + 1rem) !important;
+                }
+            }
+            input{
+                width: 50vw;
+            }
+            select, textarea{
+                width: calc(50vw + 1rem);
+            }
+        }
+        .edit{
+            width: 100%;
+            margin: 4rem 0;
+            margin-left: -1rem;
+            background: none;
+            @media (max-width: $mobile-view){
+                margin-left: 0;
+            }
+            &:hover{
+                background: $blueish-gray;
+                color: $dark-grey;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.remove{
+    background: none;
+    margin: -2rem 1rem 0 1rem;
+    @media (max-width: $mobile-view){
+        margin: -2rem 0 0 0;
+
+    }
+    &:hover{
+        background: darkred;
+        color: white;
+    }
+}
+
+.exit-btn{
+    position: absolute;
+    right: 2rem;
+}
+
+.logout-button{
+    position: absolute;
+    text-decoration: none;
+    top:0;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    background: $blueish-gray;
+    color: black;
+    &:hover{
+        color: white;
+        background: darkred;
+    }
+}
+
+.admin-login{
+    height: 30rem;
+}

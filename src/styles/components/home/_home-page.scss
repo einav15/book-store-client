@@ -1,0 +1,48 @@
+#home-page{
+    display: grid;
+    grid-template-areas: "header"
+                         "banner"
+                         "top-sellers"
+                         "ad"
+                         "new-arrivals";
+    justify-content: center;
+    margin-left: 10rem;
+    @media(max-width: $mobile-view){
+        margin-left: 0;
+        padding-top: 4rem;
+    }
+}
+
+.homepage-item{
+    width: 80vw;
+    margin: 2rem 4rem;
+    margin-top: 1rem;
+    @media(max-width: $mobile-view){
+        width: 100vw;
+        margin: 1rem 0;
+    }
+}
+#ad{
+    margin-top: 0;
+    // width: 80%;
+    justify-self: center;
+    div{
+        height: 30vh;
+        margin:  0 1rem;
+        text-align: center;
+        background: url('https://i.ibb.co/Y262yCX/Whats-App-Image-2021-03-27-at-23-35-38.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 5px ;
+        color: $dark-grey;
+        h1{ 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:  $blueish-gray; 
+            opacity: 0.75;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

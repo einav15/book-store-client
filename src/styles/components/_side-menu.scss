@@ -1,0 +1,51 @@
+.side-menu{
+    position: absolute;
+    width: 7rem;
+    z-index: 10;
+    left: 2rem;
+    margin: 2rem 0;
+    color: gray;
+    .side-menu__item{
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                display: flex;
+                align-items: center;
+                input{
+                    margin-right: 5px;
+                }
+            }
+        }
+        h3{
+            font-size: 0.8rem;
+        }
+        h2{
+            font-size: 1rem;
+        }
+        .side-menu__options{
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .side-menu__option{
+                padding-left: 0.5rem;
+                text-decoration: none;
+                color: black;
+                margin: 0.5rem 0;
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+.side-menu__breaker{
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px dotted lightgray;
+    margin: 1rem 0;
+}
+.side-menu-active{
+    background: lightgray;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+}

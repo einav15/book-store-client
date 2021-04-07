@@ -1,0 +1,98 @@
+#book-page{
+        padding: 2rem 1rem 0 0;
+    @media (max-width:$mobile-view) {
+       padding: 8rem 1rem 1rem 1rem;
+    }
+    .reg-button{
+        margin-bottom: 2rem;
+        background: $dark-grey;
+        color: $very-light-gray;
+    }
+    .book-page__info{
+        display: flex;
+        @media (max-width:500px) {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            align-items: center;
+        }
+        .book__info{
+            position: absolute;
+            left: 27.5rem;
+            @media (max-width: $mobile-view){
+                left:14rem
+            }
+            @media (max-width:500px) {
+                position: static;
+            }
+        }
+        img{
+            height: 20rem;
+            width: 12rem;
+        }
+        .book__image{
+            height:20rem !important;
+            width: 12rem !important;
+            margin-right: 1rem;
+            margin-bottom: 2rem;
+            .new-arrival__label{
+                left: -1rem;
+                text-align: center;
+                max-width: 12rem;
+                width: 12rem;
+            }
+            .top-seller__label{
+                text-align: center;
+                top: -19rem;
+                left: -3rem;
+            }
+            .sale__label{
+              text-align: center;
+              top: -14rem;
+              left: rem;
+            }
+        }
+        display: flex;
+        color: gray;
+        h1{
+            color: $dark-grey;
+        }
+        span{
+            margin-right: 0.5rem;
+        }
+        h4{
+            display: flex;
+            color: $dark-grey;
+            font-size: 0.8rem;
+            .discounted{
+                span{
+                    color: darkred;
+                }
+                .discount{
+                    color: white;
+                    padding: 0.5rem;
+                    background: darkred;
+                    border-radius: 50%;
+                }
+            }
+        }
+        @media (max-width:$mobile-view) {
+            h1{
+                font-size: 1rem;
+            }
+            h4{
+                font-size: 0.8rem;
+            }
+         }
+    }
+    p{
+        padding: 1rem 2rem 1rem 0.5rem ;
+        background: white;
+        border-radius: 0.5rem;
+        box-shadow: 1px 1px 3px black;
+    }
+}
+
+.margin-bottom{
+    margin-bottom: 2rem;
+}

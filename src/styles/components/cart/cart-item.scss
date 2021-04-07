@@ -1,0 +1,111 @@
+.cart__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    border-bottom: 2px dotted lightgray;
+    color: gray;
+    @media (max-width: $mobile-view){
+        img{
+            margin-right: 0rem !important;
+            width: 5rem !important;
+            height: 8rem !important;
+        }
+        .book__info{
+            margin-right: 0rem !important;
+            h3{
+                font-size: 0.7rem;
+            }
+            h5{
+                font-size: 0.6rem;
+            }
+        }  
+        .discounted{
+            display: flex;
+            flex-direction: column;
+        }
+        span, .book__total, .book__price, .book-item__header{
+            font-size: 0.7rem !important; 
+        }
+        .book__amount{
+            transform: scale(0.8);
+        }
+        .book__delete{
+            position: absolute;
+            opacity: 0.8;
+            right: 0rem;
+            margin-bottom: 8rem;
+            transform: scale(0.6);
+        }
+    }
+    img{
+        width: 7rem;
+        height: 11rem;
+        margin-right: 2rem;
+    }
+    .book__info{
+        margin-right: 2rem;
+        h3{
+            color: $dark-grey;
+            margin-bottom: 1rem;
+        }
+    }   
+    .book__price{
+        display: flex;
+        flex-direction: column;
+        color: $dark-grey;
+        font-size: 0.8rem;
+        .line-through{
+            margin-right: 0.5rem;
+            color: gray;
+        }
+    }
+
+    input{
+        width: 2rem;
+        height: 1rem;
+    }
+    .book__total{
+        max-width: 4rem;
+        min-width: 3rem;
+        color: $dark-grey;
+        background: none;
+        border: none;
+    }
+    span{
+        font-size: 0.8rem;
+        color: $dark-grey;
+    }
+}
+
+.book__delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    background: $dark-grey;
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    &:hover{
+      cursor: pointer; 
+      background: $very-light-gray;
+        color: $dark-grey; 
+    }
+}
+
+.cart-item__items{
+    width: 15vw;
+}
+
+.book-item__header{
+    color: grey;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 3rem;
+}
+.reduce-margin{
+    bottom: 2.5rem;
+}

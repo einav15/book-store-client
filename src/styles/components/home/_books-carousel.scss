@@ -1,0 +1,53 @@
+
+.books-carousel__container{
+    display: flex;
+    justify-self: right;
+    // background: $very-light-gray;
+    padding-top: 2rem;
+    border-radius: 1rem;
+    //box-shadow: 1px 1px 4px black;
+    button{
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+}
+.books-carousel__title{
+    position: absolute;
+    left: 14rem;
+    color: gray;
+    @media (max-width: $mobile-view) {
+        position: static;
+    }
+}
+
+.flipped-arrow{
+    transform: rotate(180deg);
+}
+
+.carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .view-all{
+        // margin-top: -3rem;
+        margin-bottom: 3rem;
+        background: $pretty-green;
+        color: white;
+        &:hover{
+            background: $pretty-green;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: $mobile-view){
+    .rec-pagination{
+        transform: scale(0.8);
+    }
+}

@@ -1,0 +1,67 @@
+@import './settings';
+*{
+    margin: 0;
+    //font-family: 'Akaya Kanadaka', cursive;
+    
+}
+
+html{
+    background: #f2f5f7;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
+.not-found{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    color: gray;
+    @media (max-width: $mobile-view){
+        padding-top: 12rem;
+    }
+    img{
+        width: 20vw;
+        height: 20vw;
+        @media (max-width: $mobile-view){
+            width: 40vw;
+            height: 40vw;
+        }
+    }
+    h3{
+        padding: 2rem;
+        padding-top: 0;
+        text-align: center;
+    }
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.min-height{
+    min-height: calc(100vh - 200px);
+    margin-left: 14rem;
+    @media(max-width: $mobile-view){
+        min-height: calc(100vh - 250px);
+        margin-left: auto;
+        padding-top: 8rem;
+    }
+}
+
+button{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.reg-button{
+    border-radius: 0;
+    &:hover{
+        background: $blueish-gray;
+        color: $dark-grey;
+    }
+}

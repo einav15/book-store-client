@@ -1,0 +1,53 @@
+
+.user-management__page{
+    width: calc(100% - 14rem);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    @media (max-width: $mobile-view){
+        width: 100%;
+    }
+    .user-management__container{
+            width: 13rem;
+            border-radius: 1rem;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            box-shadow: 1px 1px 3px black;
+        .user-management__link{
+            color: $dark-grey;
+            width: 100%;
+            padding: 1rem;
+            &:hover{
+                cursor: pointer;
+                color: white;
+                background: $dark-grey;
+            }
+        }
+    }
+}
+
+.edit-user__bg{
+    z-index: 101;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit-user{
+    padding: 2rem;
+    height: fit-content;
+    width:45vw;
+    left: calc((100vw - 45vw)/2);
+    top: 10rem;
+    // position: static;
+    input{
+        margin: 1rem 0;
+    }
+    .book__delete.exit-btn{
+        margin-top: -1rem;
+    }
+}
